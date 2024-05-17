@@ -1,0 +1,20 @@
+{
+  "name": "simple-crud-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --env-file=.env --watch src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/formbody": "^7.4.0",
+    "fastify": "^4.27.0",
+    "mongodb": "^6.6.1",
+    "mongoose": "^8.3.5"
+  }
+}

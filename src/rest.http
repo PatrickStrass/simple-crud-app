@@ -1,0 +1,39 @@
+// Get all products
+GET http://localhost:3000/api/products
+
+###
+// Get product by ID
+GET http://localhost:3000/api/product/66451cbe24893083354dceed
+
+###
+// Create product
+POST http://localhost:3000/api/product
+Content-Type: application/json
+
+{
+    "name": "Burguer",
+    "quantity": "10",
+    "price": "7.99"
+}
+
+###
+// Create product via form-url
+POST http://localhost:3000/api/product
+Content-Type: application/x-www-form-urlencoded
+
+name=Sandwich
+&quantity=7
+&price=3.99
+
+###
+// Update product by ID
+PUT http://localhost:3000/api/product/66451cbe24893083354dceed
+Content-Type: application/json
+
+{
+    "price": 100
+}
+
+###
+// Delete product by ID
+DELETE http://localhost:3000/api/product/6647c6727b7cbb8ea5a33bfb
